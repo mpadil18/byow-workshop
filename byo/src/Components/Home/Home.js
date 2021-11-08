@@ -10,9 +10,14 @@ import 'react-dropdown/style.css';
 
 
 export default function Home() {
+
+    //Initialize 2 states, that indicate whether the photo or fact popup is displayed.
+    //Both initialized as false, because by default, the user doesn't have a popup until they click a button.
     const [buttonPopup, setButtonPopup] = useState(false);
     const [button2Popup, setButton2Popup] = useState(false);
 
+    //Initialized list of imported slug images
+    //Initialized list of slug facts retreived from the website.
     const images = [Banana, Black, Leopard];
     const facts = ["Like other slugs, Black slugs prefer to find a mate but can self-fertilize.", 
     "Banana slugs have two sets of tentacles. The bottom two tentacles are for feeling and smelling.", 
@@ -21,12 +26,24 @@ export default function Home() {
         'IBM', 'Wong', 'Tol'
     ];
 
+    //The default text we display to the user that explains what interacting with the dropdown menu does.
     const defaultOption = "Click here to change the site color scheme!"; 
 
-    const generatePhoto = () => {
-        return Math.floor(Math.random() * 3);
+    //INFO:
+    //  We need to generate a random number from 0-2, that we can use to access an image or fact in any list.
+    //  (Hint: This can be done in one line!)
+    //TASK:
+    //  Return a random number using the length of the lists we have.
+    const generateNum = () => {
+        return /* CODE YOUR SOLUTION HERE */;
     };
 
+    //INFO:
+    //  Function that changes the color scheme of the website depending on the option selected on the dropdown menu.
+    //  We can select from 'IBM', 'Wong', or 'Tol'.
+    //  The code for changing the scheme based on the 1st option is already written for you. 
+    //TASK:
+    //  Finish the code by writing out the logic that changes the color if the user selects the other 2 options!
     const changeScheme = (option) => {
         console.log("PICKED", option, options[2]);
         if (option.value === options[0]) {
@@ -41,30 +58,11 @@ export default function Home() {
             }
 
         }
-        else if (option.value === options[1]) {
-            console.log("Wong")
-            //Index by 0- getByClassName returns a collection of objects. We can just access the 1st
-            document.getElementsByClassName("Home")[0].style.backgroundColor="#0A0A0A";
-            document.getElementsByClassName("Home")[0].style.color="#3070AD";
-            document.getElementsByClassName("Navbar")[0].style.backgroundColor="#DCA237";
-            document.getElementsByClassName("Footer")[0].style.backgroundColor="#DCA237";
-            for (let i = 0; i < document.getElementsByClassName("button").length; i++) {
-                document.getElementsByClassName("button")[i].style.backgroundColor="#C66526";
-            }
 
-        }
-        else if (option.value === options[2]) {
-            console.log("Tol")
-            //Index by 0- getByClassName returns a collection of objects. We can just access the 1st
-            document.getElementsByClassName("Home")[0].style.backgroundColor="#0A0A0A";
-            document.getElementsByClassName("Home")[0].style.color="#61A899";
-            document.getElementsByClassName("Navbar")[0].style.backgroundColor="#61A899";
-            document.getElementsByClassName("Footer")[0].style.backgroundColor="#36753B";
-            for (let i = 0; i < document.getElementsByClassName("button").length; i++) {
-                document.getElementsByClassName("button")[i].style.backgroundColor="#9E4A95";
-            }
+        // ** ---------- WRITE YOUR SOLUTION HERE --------- **
+        //else if...
+        // ** ----------                          --------- **
 
-        }
         return;
     };
 
@@ -122,12 +120,17 @@ export default function Home() {
             </div>
 
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                <img className="slugPic" src={images[generatePhoto()]} alt="slug popup"></img>
+                <img className="slugPic" src={"#image_source_solution"} alt="slug popup"></img>
             </Popup>
+            
 
-            <Popup trigger={button2Popup} setTrigger={setButton2Popup}>
-                <p>{facts[generatePhoto()]}</p>
-            </Popup>
+            {
+                // ** ---------- WRITE YOUR POPUP SOLUTION HERE --------- **
+                //
+                // ** ----------                                --------- **
+
+            }
+            
         </div>
     )
 
