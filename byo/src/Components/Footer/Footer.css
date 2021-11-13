@@ -1,0 +1,8 @@
+.footer {
+    height:60px;
+    background: #F3B33E;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    font-family: Rowdies;
+}

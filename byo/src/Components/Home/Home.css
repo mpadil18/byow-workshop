@@ -1,4 +1,87 @@
-.slugPic {
-    width: 100px;
-    height: 100px;
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.button {
+    background-color: #745FE8;
+    font-family: Rowdies;
+    font-size: 20px;
+    width: 315px;
+    height: 68px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown {
+    /* background-color: #745FE8; */
+    font-family: Rowdies;
+    font-size: 20px;
+    width: 315px;
+    height: 68px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slug-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+} 
+
+.slugRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: Rowdies;
+    color: #CA3A7E;
+}
+
+p {
+    color: #CA3A7E;
+    font-family: Roboto;
+    max-width: 300px;
+}
+
+li {
+    color: #CA3A7E;
+    font-family: Roboto;
+    max-width: 300px;
 }
