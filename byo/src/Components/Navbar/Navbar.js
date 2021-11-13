@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
     return (
-        <div class="navbar">
+        <div class="navbar" id="Navbar">
             <div class="left">
                 <img src={Logo} alt="Slug site logo"></img>
                 <div class="navbar-text">the slug site</div>

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-.content {
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +19,20 @@
 
 .button {
     background-color: #745FE8;
+    font-family: Rowdies;
+    font-size: 20px;
+    width: 315px;
+    height: 68px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown {
     font-family: Rowdies;
     font-size: 20px;
     width: 315px;
